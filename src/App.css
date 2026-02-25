@@ -165,7 +165,7 @@ body {
 @media (max-width: 768px) {
   .envelope-wrap {
     width: 90vw;
-    height: calc(90vw * 0.60);
+    height: calc(90vw * 0.57);
   }
 
   .env-flap {
@@ -174,11 +174,11 @@ body {
   }
 
   .env-photo {
-    width: 70vw;
+    width: 68vw;
   }
 
   .env-photo.photo1 {
-    top: -130vw;
+    top: -127vw;
   }
 
   .env-photo.photo2 {
@@ -186,6 +186,6 @@ body {
   }
 
   .envelope-wrap.dropped {
-    transform: translateY(80vw);
+    transform: translateY(60vw);
   }
 }
