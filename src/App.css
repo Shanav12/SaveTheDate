@@ -31,7 +31,7 @@ body {
 .envelope-wrap {
   position: relative;
   width: 400px;
-  height: 275px;
+  height: 225px;
   overflow: visible;
   transform: translateY(0);
   transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1);
@@ -82,7 +82,7 @@ body {
 
 .env-photo {
   position: absolute;
-  width: 260px;
+  width: 280px;
   border-radius: 5px;
   box-shadow: 0 12px 40px rgba(0,0,0,0.18);
   left: 50%;
@@ -94,16 +94,16 @@ body {
 }
 
 .envelope-wrap.dropped {
-  transform: translateY(280px); 
+  transform: translateY(275px); 
 }
 
 .env-photo.photo1 {
-  top: -460px;
+  top: -520px;
   z-index: 6;
 }
 
 .env-photo.photo2 {
-  top: -110px;
+  top: -150px;
   z-index: 5;
 }
 
@@ -165,7 +165,7 @@ body {
 @media (max-width: 768px) {
   .envelope-wrap {
     width: 90vw;
-    height: calc(90vw * 0.6875);
+    height: calc(90vw * 0.60);
   }
 
   .env-flap {
@@ -173,21 +173,19 @@ body {
     border-width: calc(90vw * 0.344) calc(45vw) 0 calc(45vw);
   }
 
-  
-
   .env-photo {
     width: 70vw;
   }
 
   .env-photo.photo1 {
-    top: -125vw;
+    top: -130vw;
   }
 
   .env-photo.photo2 {
-    top: -33vw;
+    top: -38vw;
   }
 
   .envelope-wrap.dropped {
-    transform: translateY(70vw);
+    transform: translateY(80vw);
   }
 }
