@@ -1,7 +1,7 @@
 import { useState, useRef } from "react";
 import saveTheDate from "../assets/saveTheDate.png"
 import saveTheDateBack from "../assets/saveTheDateBack.png"
-import efecto from "../assets/efecto.mp3"
+import mexico from "../assets/mexico.mp3"
 
 
 const EnvelopeReveal = () => {
@@ -11,8 +11,8 @@ const EnvelopeReveal = () => {
 
   const handleReveal = () => {
     setShowMessage(false);
-    audioRef.current = new Audio(efecto);
-    audioRef.current.currentTime = 38;
+    audioRef.current = new Audio(mexico);
+    audioRef.current.currentTime = 15;
     audioRef.current.play();
     const t1 = setTimeout(() => setPhase("flap"));  
     const t2 = setTimeout(() => setPhase(saveTheDate), 900); 
